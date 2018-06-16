@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div class="alert alert-success alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Connection Successful!</strong> Now you are allowed to Extract and Process the avilable Trades.
+</div>
+<div class="d-flex justify-content-sm-center align-items-lg-stretch p-1" style="margin:20px">
+    <canvas id="myChart"></canvas>
+    <script>
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+           // labels:["Red","Blue"],
+            labels:[@Html.Raw(ViewBag.VersionXAxis)],
+            datasets: [{
+                label: 'Number of Extractions',
+                data: [@Html.Raw(ViewBag.VersionYAxis)],
+                backgroundColor: 'rgba(251, 105, 105, 0.6)',
+                borderColor: 'gba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            },
+            title: {
+                display: true,
+                fontSize:18,
+                text: 'Extractions per Day'
+            }
+        }
+    });
+    </script>
+    <canvas id="myChart1" width="200"></canvas>
+    <script>
+    var ctx = document.getElementById("myChart1").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+           // labels:["Red","Blue"],
+            labels:[@Html.Raw(ViewBag.ProcessXAxis)],
+            datasets: [{
+                label: 'Number of Processings',
+                data: [@Html.Raw(ViewBag.ProcessYAxis)],
+                backgroundColor: 'rgba(9,129,206)',
+                borderColor: 'gba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            },
+            title: {
+                display: true,
+                fontSize:18,
+                text: 'Processings Per Day'
+            }
+        }
+    });
+    </script>
+</div>

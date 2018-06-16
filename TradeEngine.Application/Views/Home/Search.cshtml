@@ -1,0 +1,82 @@
+﻿@model IEnumerable<TradeEngine.Entities.Trade>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (Model != null)
+{
+    <table class="table table-sm table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TradeId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TradeType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Instrument)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Quantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.BuySell)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TradeStatus)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreatedOn)
+                </th>
+                @*<th>Actions</th>*@
+            </tr>
+        </thead>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TradeId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TradeType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Instrument)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BuySell)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TradeStatus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedOn)
+                </td>
+                @*<td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.TradeId }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.TradeId }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.TradeId })
+                    </td>*@
+            </tr>
+        }
+
+    </table>
+
+}
+else
+{
+    <h4>Not Found!!</h4>
+}
+

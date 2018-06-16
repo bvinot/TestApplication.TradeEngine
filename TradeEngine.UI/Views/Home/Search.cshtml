@@ -1,0 +1,28 @@
+﻿@model TradeEngine.Entities.LocalEntities.TradesModel
+
+@{
+    ViewBag.Title = "Index";
+}
+@if (Model != null)
+{
+    if (Model.Trades != null)
+    {
+        @Html.Partial("TradesDisplay",Model.Trades)
+    }
+    else if (Model.ProcessedTrades != null)
+    {
+        @Html.Partial("ProcessTradesDisplay", Model.ProcessedTrades)
+    }
+    else
+    {
+        @Html.Partial("TradesDisplay", Model.Trades)
+    }
+    if (!bool.Parse(Session["IsExtracted"]?.ToString()))
+    {
+        <div style="margin-top:1em;">
+            <a class="btn btn-info pull-right" href="/Process/ApplyFilters">Start Processing</a>
+        </div>
+    }
+}
+
+

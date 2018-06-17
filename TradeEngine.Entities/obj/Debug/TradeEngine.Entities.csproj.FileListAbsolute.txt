@@ -1,0 +1,12 @@
+H:\VS Programs\TestApplication.TradeEngine\TradeEngine.Entities\bin\Debug\TradeEngine.Entities.dll.config
+H:\VS Programs\TestApplication.TradeEngine\TradeEngine.Entities\bin\Debug\TradeEngine.Entities.dll
+H:\VS Programs\TestApplication.TradeEngine\TradeEngine.Entities\bin\Debug\TradeEngine.Entities.pdb
+H:\VS Programs\TestApplication.TradeEngine\TradeEngine.Entities\bin\Debug\EntityFramework.dll
+H:\VS Programs\TestApplication.TradeEngine\TradeEngine.Entities\bin\Debug\EntityFramework.SqlServer.dll
+H:\VS Programs\TestApplication.TradeEngine\TradeEngine.Entities\bin\Debug\EntityFramework.xml
+H:\VS Programs\TestApplication.TradeEngine\TradeEngine.Entities\bin\Debug\EntityFramework.SqlServer.xml
+H:\VS Programs\TestApplication.TradeEngine\TradeEngine.Entities\obj\Debug\TradeEngine.Entities.csproj.CoreCompileInputs.cache
+H:\VS Programs\TestApplication.TradeEngine\TradeEngine.Entities\obj\Debug\TradeEngine.Entities.csproj.CopyComplete
+H:\VS Programs\TestApplication.TradeEngine\TradeEngine.Entities\obj\Debug\TradeEngine.Entities.dll
+H:\VS Programs\TestApplication.TradeEngine\TradeEngine.Entities\obj\Debug\TradeEngine.Entities.pdb
+H:\VS Programs\TestApplication.TradeEngine\TradeEngine.Entities\obj\Debug\TradeEngine.Entities.csprojAssemblyReference.cache
